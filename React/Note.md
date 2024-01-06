@@ -8,11 +8,11 @@
 ### 导出
   * 默认导出
     ```js
-      export default function Button() {}
+    export default function Button() {}
     ```
   * 具名导出
     ```js
-      export function Button() {}
+    export function Button() {}
     ```
 ### 导入
   * 默认导入
