@@ -85,6 +85,61 @@
   ```css
   .example {  border: 1px solid black; }
   ```
+## 028 Pseduo-class（伪类）
+
+> 作者在本节视频将伪类和伪元素弄混了，本节讲解的实为伪元素。
+
+通过在元素选择器的元素名后面加上 `:first-child` 等类似修饰语，可以选择满足相应条件的元素。
+
+例如 `li:first-child` 可以选择列表中的第一个 `li`。类似的还有 `li:last-child`，`li:nth-child(2)`，`li:nth-child(even)`。
+
+一个值得注意的地方是，伪元素选择器 `li:first-child` 选择的是所有的 li 的父元素的第一个子元素，且该元素为 li 元素。`li:nth-child(2)` 选择的是 li 的父元素的第 2 个且是 li 的元素。倘若第二个元素不是 li，那么不会有元素被选择。
+
+因为上面的原因，所有的伪元素适用于子元素均为同一类的元素的情况。
+
+## 029 Styling Hyperlinks(超链接样式)
+
+```css
+a:link {
+  color: #1098af;
+  text-decoration: none;
+}
+```
+
+上面的代码可以设置所有的具有 href 属性的 a 元素。
+
+```css
+a:visited {
+  color: pink;
+}
+```
+
+上面的代码设置了点击过的链接的样式
+
+```css
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+```
+
+上面的代码定义了当悬停在链接时的样式，text-decoration 定义了文本装饰效果。将 dotted 替换为 wavy, 会出现波浪效果。
+
+```css
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+```
+
+上面的代码设置了点击链接时链接的样式。
+
+以上的四个伪类可记作 `LVHA`。
+
+## 030 Using Chrome DevTools
+
+## 031 CSS Theory #1\_ Conflicts Between Selectors（CSS 理论 1 选择器冲突）
 
   
 
