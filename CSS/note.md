@@ -141,16 +141,11 @@ a:active {
 
 ## 031 CSS Theory #1\_ Conflicts Between Selectors（CSS 理论 1 选择器冲突）
 优先级从高到低
-5. Declarations marked !import
-
-4. Inline style(style attirbute in HTML)
-
-3. ID(#) selector
-   
-2. Class(.) or pseude-class(:) selector
-
-1. ELement selector(p, div, li, etc.)
-
-0. Universal selector(*)
+* Declarations marked !import
+* Inline style(style attirbute in HTML)
+* ID(#) selector
+* Class(.) or pseude-class(:) selector
+* ELement selector(p, div, li, etc.)
+* Universal selector(*)
   
 
